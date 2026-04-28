@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surgical Industrial: An AI Music Collection</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Orbitron:wght@400;700&display=swap');
+
+        :root {
+            --bg-color: #0a0a0c;
+            --container-bg: #141418;
+            --accent-color: #00ffcc;
+            --text-main: #e0e0e0;
+            --text-dim: #a0a0a0;
+            --border-color: #2a2a30;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'JetBrains Mono', monospace;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(180deg, #1a1a20 0%, #0a0a0c 100%);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 2px solid var(--accent-color);
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.1);
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            margin: 0;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--accent-color);
+            text-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: var(--text-dim);
+            margin-top: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .introduction {
+            background: var(--container-bg);
+            padding: 30px;
+            border-radius: 4px;
+            border-left: 4px solid var(--accent-color);
+            margin-bottom: 50px;
+        }
+
+        .track-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        .track-card {
+            background: var(--container-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s, border-color 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .track-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+
+        .track-info {
+            padding: 25px;
+        }
+
+        .track-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 15px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        .track-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.4rem;
+            color: var(--accent-color);
+            margin: 0;
+        }
+
+        .tool-badge {
+            background: rgba(0, 255, 204, 0.1);
+            color: var(--accent-color);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            border: 1px solid var(--accent-color);
+        }
+
+        .track-description {
+            color: var(--text-dim);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        audio {
+            width: 100%;
+            filter: invert(1) hue-rotate(180deg) brightness(1.5);
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-dim);
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+        }
+
+        .assignment-meta {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .track-header { flex-direction: column; gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Surgical Industrial</h1>
+        <p class="subtitle">A 10-Track AI Generative Music Study</p>
+    </header>
+
+    <main>
+        <section class="introduction">
+            <p>// INITIALIZING SYSTEM...<br>
+            // THEME: Technical Breakcore / Industrial Glitch<br>
+            // OBJECTIVE: Create a 10-track collection using at least three distinct AI tools.<br>
+            // STATUS: COMPLETE</p>
+        </section>
+
+        <div class="track-grid">
+
+            <div class="track-card">
+                <div class="track-info">
+                    <div class="track-header">
+                        <h2 class="track-title">1. Basement Butterflies</h2>
+                        <span class="tool-badge">Suno</span>
+                    </div>
+                    <p class="track-description">Technical breakcore featuring rapid syncopation and cold digital textures.</p>
+                    <audio controls>
+                        <source src="music/Basement_Butterflies_-_Suno.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+            <div class="track-card">
+                <div class="track-info">
+                    <div class="track-header">
+                        <h2 class="track-title">2. Basement Butterflies 2</h2>
+                        <span class="tool-badge">Suno</span>
+                    </div>
+                    <p class="track-description">Intense industrial glitch with melodic IDM undertones and heavy percussion.</p>
+                    <audio controls>
+                        <source src="music/Basement_Butterflies2_-_Suno.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+            <div class="track-card">
+                <div class="track-info">
+                    <div class="track-header">
+                        <h2 class="track-title">3. Soldered Saffron</h2>
+                        <span class="tool-badge">Suno</span>
+                    </div>
+                    <p class="track-description">High-velocity rhythmic study with surgical micro-percussion and aggressive sound design.</p>
+                    <audio controls>
+                        <source src="music/Soldered_Saffron_-_Suno.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+            <div class="track-card">
+                <div class="track-info">
+                    <div class="track-header">
+                        <h2 class="track-title">4. Soldered Saffron 2</h2>
+                        <span class="tool-badge">Suno</span>
+                    </div>
+                    <p class="track-description">Complex drum chops layered with industrial noise and experimental digital artifacts.</p>
+                    <audio controls>
+                        <source src="music/Soldered_Saffron2_-_Suno.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+            <div class="track-card">
+                <div class="track-info">
+                    <div class="track-header">
+                        <h2 class="track-title">5. Neural Feedback Loop</h2>
+                        <span class="tool-badge">Sonauto</span>
+                    </div>
+                    <p class="track-description">Gritty industrial glitch created using experimental and noise metatags in Sonauto.</p>
+                    <audio controls>
+                        <source src="music/Neural_Feedback_Loop_-_Sonauto.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+            <div class="track-card">
+                <div class="track-info">
+                    <div class="track-header">
+                        <h2 class="track-title">6. Static Havoc Protocol</h2>
+                        <span class="tool-badge">Sonauto</span>
+                    </div>
+                    <p class="track-description">Heavy industrial EBM fusion with crushing metallic textures and 185 BPM energy.</p>
+                    <audio controls>
+                        <source src="music/Static_Havoc_Protocol_-_Sonauto.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+            <div class="track-card">
+                <div class="track-info">
+                    <div class="track-header">
+                        <h2 class="track-title">7. Breakcore</h2>
+                        <span class="tool-badge">Stable Audio</span>
+                    </div>
+                    <p class="track-description">Cinematic technical breakcore focusing on high-fidelity surgical sound design.</p>
+                    <audio controls>
+                        <source src="music/Breakcore1_-_Stable_Audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+            <div class="track-card">
+                <div class="track-info">
+                    <div class="track-header">
+                        <h2 class="track-title">8. Breakcore 2</h2>
+                        <span class="tool-badge">Stable Audio</span>
+                    </div>
+                    <p class="track-description">Deep, pressure-filled industrial vibe with muffled drum hits and resonating sub-bass.</p>
+                    <audio controls>
+                        <source src="music/Breakcore2_-_Stable_Audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+            <div class="track-card">
+                <div class="track-info">
+                    <div class="track-header">
+                        <h2 class="track-title">9. Breakcore 3</h2>
+                        <span class="tool-badge">Stable Audio</span>
+                    </div>
+                    <p class="track-description">Fragmented glitch-breakcore mimicking digital error and data corruption.</p>
+                    <audio controls>
+                        <source src="music/Breakcore3_-_Stable_Audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+            <div class="track-card">
+                <div class="track-info">
+                    <div class="track-header">
+                        <h2 class="track-title">10. Breakcore 4</h2>
+                        <span class="tool-badge">Stable Audio</span>
+                    </div>
+                    <p class="track-description">Dystopian mechanical finale with massive metallic hits and grinding gear textures.</p>
+                    <audio controls>
+                        <source src="music/Breakcore4_-_Stable_Audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GEN-AI MUSIC ASSIGNMENT</p>
+        <div class="assignment-meta">
+            <span>TRACKS: 10/10</span>
+            <span>TOOLS: 3/3</span>
+            <span>REPOSITORY: GITHUB</span>
+        </div>
+    </footer>
+
+</body>
+</html>
